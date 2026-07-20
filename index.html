@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#161C23">
+<title>Отель «Кошкин Дом» — уютная гостиница у моря в Зеленоградске</title>
+<meta name="description" content="Отель «Кошкин Дом» в Зеленоградске — 10 уютных номеров в минуте от Балтийского моря. Сауна, бассейн, бесплатный Wi-Fi и завтрак. Бронируйте онлайн.">
+<link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="brand" aria-label="Кошкин Дом — на главную">
+      <img src="assets/logo/logo-mark.svg" alt="" class="brand__mark" width="46" height="37">
+      <span class="brand__text">
+        <span class="brand__name">Кошкин Дом</span>
+        <span class="brand__sub">Бутик-отель · Зеленоградск</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#rooms">Номера</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#attractions">Рядом</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header__right">
+      <a href="tel:+79814775859" class="header__phone">+7 (981) 477-58-59</a>
+      <a href="#booking" class="btn btn--gold btn--sm js-book">Забронировать</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer__nav">
+    <a href="#rooms">Номера</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="#attractions">Рядом</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+    <a href="tel:+79814775859" class="drawer__phone">+7 (981) 477-58-59</a>
+    <a href="#booking" class="btn btn--gold js-book">Забронировать номер</a>
+  </nav>
+</div>
+<div class="drawer-scrim" id="drawer-scrim"></div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__lockup reveal">
+    <h1 class="hero__logo"><img src="assets/logo/logo-full.svg" alt="Кошкин Дом — отель у Балтийского моря" width="420" height="295"></h1>
+    <span class="rule"></span>
+    <p class="hero__tagline">Отель у Балтийского моря</p>
+    <p class="hero__sub">Три минуты до пляжа · Уют в каждом номере</p>
+    <p class="hero__loc">г. Зеленоградск • Калининградская область</p>
+    <div class="hero__buttons">
+      <a href="#booking" class="btn btn--gold js-book">Забронировать номер</a>
+      <a href="#booking" class="btn btn--ghost js-book" data-mode="sauna">Забронировать сауну</a>
+    </div>
+    <div class="hero__ratings">
+      <span><em>★</em> 5.0 — Яндекс.путешествия · 529 отзыва</span>
+      <span class="dot"></span>
+      <span><em>★</em> 9.1 — Ostrovok.ru · 66 отзывов</span>
+    </div>
+  </div>
+  <p class="hero__weather">Сегодня: дождь · воздух +16° · вода +12° · ветер 17 км/ч</p>
+</section>
+
+<!-- ============ PHOTO BAND ============ -->
+<section class="band">
+  <div class="band__frame"></div>
+  <p class="band__cap">Набережная Зеленоградска — три минуты от отеля</p>
+</section>
+
+<!-- ============ BOOKING BAR ============ -->
+<section class="booking" id="booking">
+  <button class="booking__field js-book" type="button">
+    <span class="booking__label">Заезд</span>
+    <span class="booking__value">Выберите дату</span>
+  </button>
+  <span class="booking__div"></span>
+  <button class="booking__field js-book" type="button">
+    <span class="booking__label">Выезд</span>
+    <span class="booking__value">Выберите дату</span>
+  </button>
+  <span class="booking__div"></span>
+  <button class="booking__field js-book" type="button">
+    <span class="booking__label">Количество гостей</span>
+    <span class="booking__value">2 гостя</span>
+  </button>
+  <button class="btn btn--gold booking__btn js-book">Найти номер</button>
+</section>
+
+<!-- ============ ROOMS ============ -->
+<section class="section" id="rooms">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <div>
+        <p class="eyebrow">✦ Размещение</p>
+        <h2 class="sec-title">Наши номера</h2>
+      </div>
+      <p class="sec-meta">10 номеров · 4 категории</p>
+    </div>
+    <div class="ledger">
+      <!-- rows injected below -->
+      <article class="room reveal">
+        <div class="room__photo"><span class="room__frame"></span><img src="assets/img/room-single.jpg" alt="Одноместный номер" loading="lazy"></div>
+        <div class="room__info">
+          <h3 class="room__name">Одноместный <span>— 1 гость</span></h3>
+          <p class="room__desc">Светлый номер для одного — всё необходимое, ничего лишнего. Удобная кровать, душ, чайник с чаем, Wi-Fi. Тихо, просто, спокойно.</p>
+          <p class="room__feats">Wi-Fi · Телевизор · Кондиционер · Сейф · Фен</p>
+        </div>
+        <div class="room__price">
+          <p class="price"><b>от 4 900 ₽</b><span>/ сут</span></p>
+          <a href="#booking" class="btn btn--gold btn--sm js-book">Забронировать</a>
+          <a href="#" class="link js-room">Подробнее</a>
+        </div>
+      </article>
+      <article class="room reveal">
+        <div class="room__photo"><span class="room__frame"></span><img src="assets/img/room-standard.jpg" alt="Стандартный номер" loading="lazy"></div>
+        <div class="room__info">
+          <h3 class="room__name">Стандарт <span>— до 3 гостей</span></h3>
+          <p class="room__desc">Просторный номер с большой двуспальной кроватью и премиальным матрасом — для тех, кто ценит комфорт. Подходит для размещения от одного до трёх гостей. Wi-Fi, душ, чайник с чаем, всё необходимое рядом.</p>
+          <p class="room__feats">Wi-Fi · Кондиционер · Сейф · Фен · Телевизор · Холодильник</p>
+        </div>
+        <div class="room__price">
+          <p class="price"><b>от 6 000 ₽</b><span>/ сут</span></p>
+          <p class="price__extra">доп. место — 1 800 ₽/сут</p>
+          <a href="#booking" class="btn btn--gold btn--sm js-book">Забронировать</a>
+          <a href="#" class="link js-room">Подробнее</a>
+        </div>
+      </article>
+      <article class="room reveal">
+        <div class="room__photo"><span class="room__frame"></span><img src="assets/img/room-junior.jpg" alt="Номер полулюкс" loading="lazy"></div>
+        <div class="room__info">
+          <h3 class="room__name">Полулюкс <span>— до 4 гостей</span></h3>
+          <p class="room__desc">Номер с большой двуспальной кроватью и качественным матрасом, дополнительным спальным местом и возможностью выйти на балкон — в некоторых номерах открывается свой вид. Больше пространства, больше свободы.</p>
+          <p class="room__feats">Wi-Fi · Кондиционер · Халат · Телевизор · Сейф · Фен</p>
+        </div>
+        <div class="room__price">
+          <p class="price"><b>от 8 500 ₽</b><span>/ сут</span></p>
+          <p class="price__extra">доп. место — 1 800 ₽/сут</p>
+          <a href="#booking" class="btn btn--gold btn--sm js-book">Забронировать</a>
+          <a href="#" class="link js-room">Подробнее</a>
+        </div>
+      </article>
+      <article class="room reveal">
+        <div class="room__photo"><span class="room__frame"></span><img src="assets/img/room-family.jpg" alt="Семейный номер" loading="lazy"></div>
+        <div class="room__info">
+          <h3 class="room__name">Семейный <span>— до 5 гостей</span></h3>
+          <p class="room__desc">Две кровати и отдельная гостиная — всё, чтобы каждый чувствовал себя дома. Места хватит на всех, а пространство позволяет отдыхать в своём ритме.</p>
+          <p class="room__feats">Wi-Fi · Кондиционер · Телевизор · Фен · Чайник · Душ · Сейф · Холодильник</p>
+        </div>
+        <div class="room__price">
+          <p class="price"><b>от 12 000 ₽</b><span>/ сут</span></p>
+          <p class="price__extra">доп. место — 1 800 ₽/сут</p>
+          <a href="#booking" class="btn btn--gold btn--sm js-book">Забронировать</a>
+          <a href="#" class="link js-room">Подробнее</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADVANTAGES ============ -->
+<section class="section section--navy" id="advantages">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">✦ Почему мы</p>
+      <h2 class="sec-title sec-title--light">Преимущества отеля</h2>
+    </div>
+    <div class="adv-grid">
+      <div class="adv reveal"><span class="adv__ic" data-i="waves"></span><h3>У моря</h3><p>Всего 5 минут пешком до Балтийского побережья</p></div>
+      <div class="adv reveal"><span class="adv__ic" data-i="car"></span><h3>Бесплатная парковка</h3><p>Охраняемая стоянка для автомобилей гостей</p></div>
+      <div class="adv reveal"><span class="adv__ic" data-i="wifi"></span><h3>Wi-Fi везде</h3><p>Высокоскоростной интернет в каждом номере и зонах отдыха</p></div>
+      <div class="adv reveal"><span class="adv__ic" data-i="food"></span><h3>Завтрак включён</h3><p>Свежий завтрак каждое утро для наших гостей</p></div>
+      <div class="adv reveal"><span class="adv__ic" data-i="flame"></span><h3>Сауна</h3><p>Финская сауна для расслабления после долгого дня</p></div>
+      <div class="adv reveal"><span class="adv__ic" data-i="pin"></span><h3>Куршская коса рядом</h3><p>20 минут до Национального парка ЮНЕСКО</p></div>
+      <div class="adv reveal"><span class="adv__ic" data-i="waves"></span><h3>Аренда сапов</h3><p>Возьмите сап-борд и исследуйте побережье Балтийского моря</p></div>
+      <div class="adv reveal"><span class="adv__ic" data-i="bike"></span><h3>Велосипеды</h3><p>Прокат велосипедов для прогулок по городу и дюнам</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ATTRACTIONS ============ -->
+<section class="section" id="attractions">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <div>
+        <p class="eyebrow">✦ Что посмотреть</p>
+        <h2 class="sec-title">Рядом с нами</h2>
+      </div>
+      <p class="sec-meta">7 мест в пешей доступности</p>
+    </div>
+
+    <article class="feat reveal">
+      <div class="feat__photo"><span class="feat__frame"></span><img src="assets/img/attr-spit.jpg" alt="Куршская коса" loading="lazy"></div>
+      <div class="feat__body">
+        <p class="attr__meta">15 км от отеля · 20 мин</p>
+        <h3 class="feat__title">Куршская коса</h3>
+        <p class="feat__desc">Уникальная песчаная коса длиной 98 км, включённая в список Всемирного наследия ЮНЕСКО. Дюны высотой до 60 метров, танцующий лес, орнитологическая станция и потрясающие виды на залив и море.</p>
+        <p class="attr__tags">Природа · ЮНЕСКО · Пляж</p>
+      </div>
+    </article>
+
+    <div class="attr-grid">
+      <article class="attr reveal">
+        <div class="attr__photo"><img src="assets/img/attr-promenade.jpg" alt="Променад" loading="lazy"></div>
+        <p class="attr__meta">300 м · 5 мин пешком</p>
+        <h3 class="attr__name">Променад</h3>
+        <p class="attr__desc">Главная набережная Зеленоградска — идеальное место для прогулок вдоль Балтийского моря. Деревянный настил, уютные кафе, смотровые площадки и невероятные закаты над морем.</p>
+        <p class="attr__tags">Прогулки · Море · Закаты</p>
+      </article>
+      <article class="attr reveal">
+        <div class="attr__photo"><img src="assets/img/attr-kurortny.jpg" alt="Курортный проспект" loading="lazy"></div>
+        <p class="attr__meta">200 м · 3 мин пешком</p>
+        <h3 class="attr__name">Курортный проспект</h3>
+        <p class="attr__desc">Центральная пешеходная улица Зеленоградска с красивой архитектурой начала XX века. Уютные кафе, сувенирные магазины, уличные музыканты и атмосфера курортного города.</p>
+        <p class="attr__tags">Архитектура · Шоппинг</p>
+      </article>
+      <article class="attr reveal">
+        <div class="attr__photo"><img src="assets/img/attr-prud.jpg" alt="Городской парк и Тортилин пруд" loading="lazy"></div>
+        <p class="attr__meta">700 м · 10 мин пешком</p>
+        <h3 class="attr__name">Городской парк и Тортилин пруд</h3>
+        <p class="attr__desc">Живописный парк с прудом, где обитают утки и черепахи. Прекрасное место для семейного отдыха с детьми. Ухоженные дорожки, скамейки и тень старых деревьев.</p>
+        <p class="attr__tags">Семьям · Парк</p>
+      </article>
+      <article class="attr reveal">
+        <div class="attr__photo"><img src="assets/img/attr-cats.jpg" alt="Памятник Зеленоградским котам" loading="lazy"></div>
+        <p class="attr__meta">350 м · 5 мин пешком</p>
+        <h3 class="attr__name">Памятник Зеленоградским котам</h3>
+        <p class="attr__desc">Знаменитая скульптурная композиция, посвящённая котам — неофициальному символу города. Популярное место для фотографий и одна из самых узнаваемых достопримечательностей.</p>
+        <p class="attr__tags">Кошки · Памятник · Фото</p>
+      </article>
+      <article class="attr reveal">
+        <div class="attr__photo"><img src="assets/img/attr-murarium.jpg" alt="Музей кошек Мурариум" loading="lazy"></div>
+        <p class="attr__meta">500 м · 7 мин пешком</p>
+        <h3 class="attr__name">Музей кошек «Мурариум»</h3>
+        <p class="attr__desc">Единственный в России музей, посвящённый кошкам. Расположен в старинной водонапорной башне. Более 4500 экспонатов и смотровая площадка с панорамным видом на город.</p>
+        <p class="attr__tags">Музей · Кошки</p>
+      </article>
+      <article class="attr reveal">
+        <div class="attr__photo"><img src="assets/img/attr-tower.jpg" alt="Водонапорная башня" loading="lazy"></div>
+        <p class="attr__meta">600 м · 8 мин пешком</p>
+        <h3 class="attr__name">Водонапорная башня</h3>
+        <p class="attr__desc">Историческая башня начала XX века — один из символов Зеленоградска. Внутри располагается музей, а на вершине — смотровая площадка с видом на Балтийское море и черепичные крыши города.</p>
+        <p class="attr__tags">История · Панорама</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIVE CAMERA ============ -->
+<section class="camera" style="background-image:url('assets/img/camera.jpg')">
+  <div class="camera__frame"></div>
+  <div class="camera__inner reveal">
+    <p class="camera__live"><span class="pulse"></span> Онлайн · Пляж Зеленоградска</p>
+    <h2 class="camera__title">Зеленоградск прямо сейчас</h2>
+    <p class="camera__sub">Смотрите на море в реальном времени — Балтийское море • Пляж</p>
+    <a href="https://kgd.ru/traffic/camera/18-zelenogradsk-plyazh" target="_blank" rel="noopener" class="btn btn--ghost camera__btn">▶ Открыть камеру</a>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="sec-head sec-head--split">
+      <div>
+        <p class="eyebrow">✦ Атмосфера</p>
+        <h2 class="sec-title">Фотогалерея</h2>
+      </div>
+      <p class="sec-meta">Кошки живут здесь повсюду — и живые, и нарисованные</p>
+    </div>
+    <div class="mosaic" id="mosaic">
+      <div class="mosaic__col">
+        <button class="mosaic__cell mosaic__cell--tall"  data-src="assets/img/gal-1.jpg"><img src="assets/img/gal-1.jpg" alt="Фото отеля" loading="lazy"></button>
+        <button class="mosaic__cell mosaic__cell--short" data-src="assets/img/gal-2.jpg"><img src="assets/img/gal-2.jpg" alt="Фото отеля" loading="lazy"></button>
+      </div>
+      <div class="mosaic__col">
+        <button class="mosaic__cell mosaic__cell--short" data-src="assets/img/gal-3.jpg"><img src="assets/img/gal-3.jpg" alt="Фото отеля" loading="lazy"></button>
+        <button class="mosaic__cell mosaic__cell--tall"  data-src="assets/img/gal-4.jpg"><img src="assets/img/gal-4.jpg" alt="Фото отеля" loading="lazy"></button>
+      </div>
+      <div class="mosaic__col">
+        <button class="mosaic__cell mosaic__cell--tall"  data-src="assets/img/gal-5.jpg"><img src="assets/img/gal-5.jpg" alt="Фото отеля" loading="lazy"></button>
+        <button class="mosaic__cell mosaic__cell--short" data-src="assets/img/gal-6.jpg"><img src="assets/img/gal-6.jpg" alt="Фото отеля" loading="lazy"></button>
+      </div>
+      <div class="mosaic__col">
+        <button class="mosaic__cell mosaic__cell--short" data-src="assets/img/gal-7.jpg"><img src="assets/img/gal-7.jpg" alt="Фото отеля" loading="lazy"></button>
+        <button class="mosaic__cell mosaic__cell--tall"  data-src="assets/img/gal-8.jpg"><img src="assets/img/gal-8.jpg" alt="Фото отеля" loading="lazy"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section section--navy" id="reviews">
+  <div class="wrap">
+    <div class="sec-head sec-head--center">
+      <p class="eyebrow">✦ Нас рекомендуют</p>
+      <h2 class="sec-title sec-title--light">Отзывы гостей</h2>
+    </div>
+    <div class="rev-grid">
+      <article class="rev reveal">
+        <p class="rev__stars">★ ★ ★ ★ ★</p>
+        <p class="rev__text">Отличный небольшой отель. Комфортные и чистые номера, хорошая кровать с удобным матрасом. Прекрасный вид из окна. Очень удобное расположение.</p>
+        <p class="rev__name">Ольга Л.</p>
+        <p class="rev__meta">101Hotels · февраль 2026</p>
+      </article>
+      <article class="rev reveal">
+        <p class="rev__stars">★ ★ ★ ★ ★</p>
+        <p class="rev__text">Отличное место! Расположение очень удобное, до моря буквально 3 минуты. Завтраки — оценка 5 из 5! Очень большие порции и разнообразные варианты. Милый интерьер.</p>
+        <p class="rev__name">Людмила Ч.</p>
+        <p class="rev__meta">Яндекс Путешествия · февраль 2026</p>
+      </article>
+      <article class="rev reveal">
+        <p class="rev__stars">★ ★ ★ ★ ★</p>
+        <p class="rev__text">Прекрасный отель в самом центре Зеленоградска. До моря пешком 3 минуты. Номера чистые, уютные. Завтраки разнообразные и вкусные. Персонал доброжелательный.</p>
+        <p class="rev__name">Сергей М.</p>
+        <p class="rev__meta">2ГИС · январь 2026</p>
+      </article>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>5.0</b><span>Яндекс Путешествия</span><em>525 отзывов</em></div>
+      <span class="stat__div"></span>
+      <div class="stat"><b>9.6</b><span>101Hotels</span><em>402 отзыва</em></div>
+      <span class="stat__div"></span>
+      <div class="stat"><b>4.9</b><span>2ГИС</span><em>332 отзыва</em></div>
+      <span class="stat__div"></span>
+      <div class="stat"><b>9.1</b><span>Островок</span><em>118 отзывов</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTS ============ -->
+<section class="section" id="contacts">
+  <div class="wrap contacts">
+    <div class="contacts__col">
+      <p class="eyebrow">✦ Связь</p>
+      <h2 class="sec-title">Контакты</h2>
+      <dl class="info">
+        <div class="info__row"><dt>Адрес</dt><dd>г. Зеленоградск, ул. Гагарина, д. 1А</dd></div>
+        <div class="info__row"><dt>Телефон</dt><dd><a href="tel:+79814775859">+7 (981) 477-58-59</a></dd></div>
+        <div class="info__row"><dt>Email</dt><dd><a href="mailto:hotel@koshkin-dom.ru">hotel@koshkin-dom.ru</a></dd></div>
+        <div class="info__row"><dt>Режим работы</dt><dd>Круглосуточно</dd></div>
+      </dl>
+      <a href="#booking" class="btn btn--gold js-book">Забронировать номер</a>
+    </div>
+    <div class="contacts__map">
+      <span class="contacts__frame"></span>
+      <a href="https://yandex.ru/maps/?ll=20.4697,54.9593&z=17&pt=20.4697,54.9593,pm2rdm&text=Кошкин Дом, ул. Гагарина, 1А" target="_blank" rel="noopener"><img src="assets/img/map.jpg" alt="Карта расположения отеля Кошкин Дом" loading="lazy"></a>
+      <span class="contacts__chip">Кошкин Дом · ул. Гагарина, 1А</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__top">
+    <div class="footer__brand">
+      <img src="assets/logo/logo-full.svg" alt="Кошкин Дом" class="footer__logo" width="170" height="119">
+      <p class="footer__desc">Уютный отель у Балтийского моря<br>в самом сердце Зеленоградска</p>
+      <p class="footer__pay">Оплата <span class="pay-mir">МИР</span></p>
+    </div>
+    <div class="footer__col">
+      <h4>Контакты</h4>
+      <a href="https://yandex.ru/maps/?ll=20.4697,54.9593&z=17&pt=20.4697,54.9593,pm2rdm&text=Кошкин Дом, ул. Гагарина, 1А" target="_blank" rel="noopener">г. Зеленоградск, ул. Гагарина, д. 1А</a>
+      <a href="tel:+79814775859">+7 (981) 477-58-59</a>
+      <a href="mailto:hotel@koshkin-dom.ru">hotel@koshkin-dom.ru</a>
+      <span>Круглосуточно</span>
+    </div>
+    <div class="footer__col">
+      <h4>Документы</h4>
+      <a href="#" class="js-doc">Договор на оказание гостиничных услуг</a>
+      <a href="#" class="js-doc">Пользовательское соглашение</a>
+      <a href="#" class="js-doc">Правила предоставления гостиничных услуг</a>
+      <a href="#" class="js-doc">Памятка о правилах пожарной безопасности</a>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© 2026 Отель «Кошкин Дом» • г. Зеленоградск</span>
+    <a href="#" class="js-doc">Управление сайтом</a>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lb-close" aria-label="Закрыть">✕</button>
+  <button class="lightbox__nav lightbox__prev" id="lb-prev" aria-label="Назад">‹</button>
+  <img src="" alt="" id="lb-img">
+  <button class="lightbox__nav lightbox__next" id="lb-next" aria-label="Вперёд">›</button>
+</div>
+
+<!-- Booking flow -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal__box bk">
+    <div class="bk__head">
+      <h3 class="bk__htitle" id="bk-htitle">Выберите даты</h3>
+      <button class="modal__close" id="modal-close" aria-label="Закрыть">✕</button>
+    </div>
+
+    <div class="bk__steps" id="bk-steps">
+      <button type="button" class="bk__stab is-active" data-tab="dates"><span class="bk__sbar"></span><span class="bk__slbl">Даты</span></button>
+      <button type="button" class="bk__stab" data-tab="cat"><span class="bk__sbar"></span><span class="bk__slbl">Категория</span></button>
+      <button type="button" class="bk__stab" data-tab="contact"><span class="bk__sbar"></span><span class="bk__slbl">Контакты</span></button>
+    </div>
+
+    <div class="bk__scroll">
+      <!-- STEP 1: dates -->
+      <section class="bstep is-active" data-step="dates">
+        <div class="bk__mode">
+          <button type="button" class="bk__modebtn is-active" data-mode="room">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+            Номер</button>
+          <button type="button" class="bk__modebtn" data-mode="sauna">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></svg>
+            Сауна</button>
+        </div>
+
+        <div class="bk__room" id="bk-room-pane">
+          <p class="bk__flabel">Количество гостей</p>
+          <div class="bk__guests">
+            <button type="button" class="bk__gbtn" id="bk-gminus" aria-label="Меньше">−</button>
+            <span class="bk__gval" id="bk-gval">2</span>
+            <button type="button" class="bk__gbtn" id="bk-gplus" aria-label="Больше">+</button>
+            <span class="bk__gword">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <em id="bk-gword">гостя</em>
+            </span>
+          </div>
+          <div class="bk__cal" id="bk-cal"></div>
+          <p class="bk__err" id="bk-dates-err"></p>
+          <button class="btn btn--gold bk__wide" id="bk-search" disabled>Показать доступные категории</button>
+        </div>
+
+        <div class="bk__sauna-pane" id="bk-sauna-pane" hidden>
+          <form class="bk__form" id="bk-sauna-form">
+            <label>Дата<input type="date" name="date" required></label>
+            <label>Время начала<input type="time" name="time" value="18:00" required></label>
+            <label>Часов (мин. 2)<input type="number" name="hours" min="2" max="8" value="2" required></label>
+            <label>Гостей<input type="number" name="guests" min="1" max="10" value="2" required></label>
+            <label class="bk__full">Ваше имя<input type="text" name="name" placeholder="Иван Иванов" required></label>
+            <label class="bk__full">Телефон<input type="tel" name="phone" placeholder="+7 900 000-00-00" required></label>
+            <button type="submit" class="btn btn--gold bk__wide">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- STEP 2: categories -->
+      <section class="bstep" data-step="cat">
+        <p class="bk__summary" id="bk-summary"></p>
+        <p class="bk__loading" id="bk-loading">Проверяем доступность…</p>
+        <div class="bk__list" id="bk-list"></div>
+        <div class="bk__empty" id="bk-empty">
+          <p>Нет доступных номеров на эти даты.</p>
+          <p>Попробуйте выбрать другие даты или уменьшить количество гостей.</p>
+        </div>
+      </section>
+
+      <!-- STEP 3: contact -->
+      <section class="bstep" data-step="contact">
+        <div class="bk__chosen" id="bk-chosen"></div>
+        <form class="bk__form" id="bk-form">
+          <label>Ваше имя<input type="text" name="name" placeholder="Иван Иванов" required></label>
+          <label>Телефон<input type="tel" name="phone" placeholder="+7 900 000-00-00" required></label>
+          <label class="bk__full">Комментарий<textarea name="note" rows="2" placeholder="Пожелания…"></textarea></label>
+          <button type="submit" class="btn btn--gold bk__wide">Отправить заявку</button>
+        </form>
+      </section>
+
+      <!-- DONE -->
+      <section class="bstep" data-step="done">
+        <div class="bk__done-ic">✓</div>
+        <h3 class="bk__title">Заявка принята!</h3>
+        <p class="bk__lead" id="bk-done-msg">Спасибо за ваше бронирование. В ближайшее время с вами свяжется наш администратор для подтверждения.</p>
+        <button class="btn btn--gold bk__wide" id="bk-close2">Готово</button>
+      </section>
+    </div>
+
+    <p class="bk__note">Прототип: заявки не отправляются на сервер.</p>
+  </div>
+</div>
+
+<!-- Room detail -->
+<div class="modal rmodal" id="rmodal" aria-hidden="true">
+  <div class="modal__box rm">
+    <button class="modal__close rm__close" id="rm-close" aria-label="Закрыть">✕</button>
+    <div class="rm__photo"><img id="rm-img" src="" alt=""></div>
+    <div class="rm__body">
+      <div class="rm__top">
+        <span class="rm__eyebrow">Категория</span>
+        <span class="rm__guests" id="rm-guests"></span>
+      </div>
+      <h3 class="rm__name" id="rm-name"></h3>
+      <p class="rm__desc" id="rm-desc"></p>
+      <div class="rm__chips" id="rm-chips"></div>
+      <p class="rm__plabel">Цены за ночь</p>
+      <div class="rm__prices" id="rm-prices"></div>
+    </div>
+    <div class="rm__foot">
+      <p class="rm__from" id="rm-from"></p>
+      <button class="btn btn--gold" id="rm-book">Забронировать</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

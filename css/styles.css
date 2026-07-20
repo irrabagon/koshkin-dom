@@ -201,7 +201,7 @@ a{color:inherit;text-decoration:none}
 .rev__name{font-family:var(--serif);font-weight:500;font-size:19px;color:var(--ivory)}
 .rev__meta{font-size:10px;color:var(--gold);letter-spacing:.06em;text-transform:none;margin-top:-8px}
 .stats{display:flex;align-items:center;justify-content:center;gap:0;margin-top:8px}
-.stat{flex:1;max-width:280px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.stat{flex:1;max-width:280px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:26px}
 .stat b{font-family:var(--serif);font-weight:400;font-size:clamp(76px,8.5vw,118px);color:var(--gold);line-height:.9;letter-spacing:.01em}
 .stat span{font-size:13px;color:var(--ivory);letter-spacing:.05em;font-weight:500}
 .stat em{font-style:normal;font-size:12px;color:var(--ivory);opacity:.42;letter-spacing:.03em;margin-top:-8px}
@@ -218,7 +218,7 @@ a{color:inherit;text-decoration:none}
 .info__row dd{font-size:19px;color:var(--ink)}
 .info__row dd a{transition:color .25s}.info__row dd a:hover{color:var(--gold)}
 .contacts__map{position:relative;width:656px;height:440px}
-.contacts__map img{width:640px;height:424px;object-fit:cover}
+.contacts__map img,.contacts__map .contacts__embed{width:640px;height:424px;object-fit:cover;display:block;border:0}
 .contacts__frame{position:absolute;left:16px;top:16px;width:640px;height:424px;border:1px solid rgba(191,147,93,.6);z-index:2;pointer-events:none}
 .contacts__chip{position:absolute;left:20px;bottom:20px;z-index:3;background:var(--navy-d);color:var(--ivory);
   font-size:11px;letter-spacing:.06em;text-transform:none;font-weight:500;padding:10px 16px}
@@ -307,7 +307,7 @@ a{color:inherit;text-decoration:none}
   .adv{padding:0}
   .contacts{grid-template-columns:1fr;gap:40px}
   .contacts__map{width:100%;height:auto;aspect-ratio:3/2}
-  .contacts__map img{width:calc(100% - 16px);height:calc(100% - 16px)}
+  .contacts__map img,.contacts__map .contacts__embed{width:calc(100% - 16px);height:calc(100% - 16px)}
   .contacts__frame{width:calc(100% - 16px);height:calc(100% - 16px)}
   .rev-grid{grid-template-columns:1fr}
   .stats{flex-wrap:wrap;gap:24px 0}
